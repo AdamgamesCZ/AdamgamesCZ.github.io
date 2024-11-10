@@ -15,3 +15,4 @@ function changeContent(section) {
     document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
     document.getElementById(section).classList.add('active');
 }
+
