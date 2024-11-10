@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Moje webovka</title>
+</head>
+<body>
+    <header>
+        <a href="#" id="logo" class="logo" onclick="changeContent('logo')">Adam Čermák</a>
+
+        <nav>
+            <a href="#" id="o-mne" onclick="changeContent('o-mne')">O mně</a>
+            <a href="#" id="projekty" onclick="changeContent('projekty')">Projekty</a>
+            <a href="#" id="kontakt" onclick="changeContent('kontakt')">Kontakt</a>
+            <a href="#" id="ukoly" onclick="changeContent('ukoly')">Úkoly</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img" id="logo-img" style="display: block;">
+            <img src="main.png" alt="">
+        </div>
+        <div class="home-content">
+            <div class="content-section" id="logo-content" style="display: block;">
+                <h1>Ahoj, jmenuji se <span>Adam</span></h1>
+                <h3 class="typing-text">a Jsem <span></span></h3>
+                <p>Ve zkratce jsem 19ti-letý ňouma, co stále objevuje svět a všechno ho sere :3</p>
+            </div>
+            <div class="content-section" id="o-mne-content" style="display: none;">
+                <h1>Něco o <span>Mně</span></h1>
+                <p>Chodím na SPST do ITA4</p>
+                <p>Nevím co chci v životě dělat...Nejradši bych asi spal</p>
+                <p>nevim co dal psát, jsem nudnej</p>
+                <p>Mám základní znalosti programů Adobe(Premiere Pro, Photoshop, Animate)</p>
+            </div>
+            <div class="content-section" id="projekty-content" style="display: none;">
+                <h1>Moje <span>Projekty</span></h1>
+                <h2>Naše Hry:</h2>
+                <h2>Knight Jindra(nedokonceno): <a href="#" class="btn">Odkaz</a></h2>
+            
+                <h2>Project Horror(nedokonceno): <a href="#" class="btn">Odkaz</a></h2>
+            </div>
+            <div class="content-section" id="kontakt-content" style="display: none;">
+                <h1>Kontaktuj <span>mně</span></h1>
+                <p>Můžeš mi napsat na e-mail(asi si to nepřečtu) nebo mě najít na sociálních sítích</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="#" class="btn">Odkaz</a>
+            </div>
+            <div class="content-section" id="ukoly-content" style="display: none;">
+                <h1>Moje <span>Úkoly</span></h1>
+                <p>Zde jsou některé úkoly, které si dávám za cíl dokončit.</p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
