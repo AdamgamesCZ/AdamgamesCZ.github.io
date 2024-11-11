@@ -20,6 +20,7 @@ body{
     overflow-x: hidden;
     background-color: black;
     color: white;
+    font-size: 1.6rem;
 }
 
 header{
@@ -379,3 +380,56 @@ span{
         display: block; /* Zobrazí se pouze na menších zařízeních */
     }
 }
+
+
+
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%; /* Zmenšení základní velikosti textu */
+    }
+}
+
+/* Další zmenšení textu pro menší tablety a velké telefony */
+@media (max-width: 600px) {
+    html {
+        font-size: 50%; /* Zmenšení základní velikosti textu */
+    }
+}
+
+/* Styl pro malé telefony a velmi malé obrazovky */
+@media (max-width: 480px) {
+    html {
+        font-size: 45%; /* Další zmenšení základní velikosti textu */
+    }
+}
+
+/* Zmenšení textu pro extrémně malé obrazovky, např. starší telefony */
+@media (max-width: 360px) {
+    html {
+        font-size: 40%; /* Další zmenšení základní velikosti textu */
+    }
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Poměr stran pro YouTube video */
+}
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Poměr stran 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
