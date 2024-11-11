@@ -16,3 +16,12 @@ function changeContent(section) {
     document.getElementById(section).classList.add('active');
 }
 
+
+
+function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active'); // Přepínání třídy pro zobrazení/skrývání menu
+}
+
+
+

@@ -316,3 +316,66 @@ span{
 #projekty-content h2 {
     margin-bottom: 25px; /* přidá prostor mezi každým h2 */
 }
+
+
+
+
+.burger-icon {
+    display: none; /* Skryjeme burger ikonu ve větších zařízeních */
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 995px) {
+    .burger-icon {
+        display: block; /* Zobrazíme burger ikonu na menších zařízeních */
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #161616;
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.3s ease-in-out;
+        z-index: 200;
+    }
+
+    nav.active {
+        right: 0; /* Posuneme menu do viditelné části obrazovky */
+    }
+
+    nav a {
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 5%;
+        background-color: black; /* Zachováme černé pozadí */
+        z-index: 100;
+    }
+}
+.close-icon {
+    display: none; /* Skryté ve větších zařízeních */
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+@media (max-width: 995px) {
+    .close-icon {
+        display: block; /* Zobrazí se pouze na menších zařízeních */
+    }
+}

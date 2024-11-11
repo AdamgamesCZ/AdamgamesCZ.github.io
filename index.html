@@ -10,8 +10,14 @@
 <body>
     <header>
         <a href="#" id="logo" class="logo" onclick="changeContent('logo')">Adam Čermák</a>
-
+        <div class="burger-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+            
+        </div>
         <nav>
+            <div class="close-icon" onclick="toggleMenu()">
+                <i class="fas fa-times"></i>
+            </div>
             <a href="#" id="o-mne" onclick="changeContent('o-mne')">O mně</a>
             <a href="#" id="projekty" onclick="changeContent('projekty')">Projekty</a>
             <a href="#" id="kontakt" onclick="changeContent('kontakt')">Kontakt</a>
