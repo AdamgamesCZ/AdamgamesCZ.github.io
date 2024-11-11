@@ -307,22 +307,22 @@ span{
     display: none;
 }
 #projekty-content h1, #projekty-content h2 {
-    margin-bottom: 20px; /* přidá prostor mezi nadpisy */
+    margin-bottom: 20px; 
 }
 
 #projekty-content h2 a.btn {
-    margin-left: 10px;  /* přidá prostor mezi textem a tlačítkem */
+    margin-left: 10px; 
 }
 
 #projekty-content h2 {
-    margin-bottom: 25px; /* přidá prostor mezi každým h2 */
+    margin-bottom: 25px; 
 }
 
 
 
 
 .burger-icon {
-    display: none; /* Skryjeme burger ikonu ve větších zařízeních */
+    display: none;
     font-size: 2.5rem;
     color: white;
     cursor: pointer;
@@ -330,7 +330,7 @@ span{
 
 @media (max-width: 995px) {
     .burger-icon {
-        display: block; /* Zobrazíme burger ikonu na menších zařízeních */
+        display: block; 
     }
 
     nav {
@@ -349,7 +349,7 @@ span{
     }
 
     nav.active {
-        right: 0; /* Posuneme menu do viditelné části obrazovky */
+        right: 0; 
     }
 
     nav a {
@@ -362,12 +362,12 @@ span{
         justify-content: space-between;
         align-items: center;
         padding: 1rem 5%;
-        background-color: black; /* Zachováme černé pozadí */
+        background-color: black; 
         z-index: 100;
     }
 }
 .close-icon {
-    display: none; /* Skryté ve větších zařízeních */
+    display: none; 
     font-size: 2.5rem;
     color: white;
     cursor: pointer;
@@ -377,7 +377,7 @@ span{
 }
 @media (max-width: 995px) {
     .close-icon {
-        display: block; /* Zobrazí se pouze na menších zařízeních */
+        display: block; 
     }
 }
 
@@ -387,35 +387,35 @@ span{
 
 @media (max-width: 768px) {
     html {
-        font-size: 55%; /* Zmenšení základní velikosti textu */
+        font-size: 55%; 
     }
 }
 
-/* Další zmenšení textu pro menší tablety a velké telefony */
+
 @media (max-width: 600px) {
     html {
-        font-size: 50%; /* Zmenšení základní velikosti textu */
+        font-size: 50%; 
     }
 }
 
-/* Styl pro malé telefony a velmi malé obrazovky */
+
 @media (max-width: 480px) {
     html {
-        font-size: 45%; /* Další zmenšení základní velikosti textu */
+        font-size: 45%; 
     }
 }
 
-/* Zmenšení textu pro extrémně malé obrazovky, např. starší telefony */
+
 @media (max-width: 360px) {
     html {
-        font-size: 40%; /* Další zmenšení základní velikosti textu */
+        font-size: 40%; 
     }
 }
 
 iframe {
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 9; /* Poměr stran pro YouTube video */
+    aspect-ratio: 16 / 9; 
 }
 .video-wrapper {
     position: relative;

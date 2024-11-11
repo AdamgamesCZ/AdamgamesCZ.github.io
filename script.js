@@ -1,17 +1,17 @@
 function changeContent(section) {
     const sections = document.querySelectorAll('.content-section');
-    sections.forEach(sec => sec.style.display = 'none'); // Skryj všechny sekce
+    sections.forEach(sec => sec.style.display = 'none'); 
 
-    // Zobraz sekci podle ID
+  
     if (section === 'logo') {
         document.getElementById('logo-content').style.display = 'block';
-        document.getElementById('logo-img').style.display = 'block'; // Zobraz obrázek v logo-content
+        document.getElementById('logo-img').style.display = 'block'; 
     } else {
         document.getElementById(`${section}-content`).style.display = 'block';
-        document.getElementById('logo-img').style.display = 'none'; // Skryj obrázek v ostatních sekcích
+        document.getElementById('logo-img').style.display = 'none'; 
     }
 
-    // Aktualizace aktivního odkazu
+   
     document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
     document.getElementById(section).classList.add('active');
 }
@@ -20,8 +20,5 @@ function changeContent(section) {
 
 function toggleMenu() {
     const nav = document.querySelector('nav');
-    nav.classList.toggle('active'); // Přepínání třídy pro zobrazení/skrývání menu
+    nav.classList.toggle('active'); 
 }
-
-
-
